@@ -1,6 +1,15 @@
 {
-  "originHash" : "4f6ddbfe72c2341ea2dab507da49cd5f9735a96beb7875df26f2f725deb00638",
+  "originHash" : "893ad29ac2939b667842f2854e9331550993b9af3f057a742f3c8c95cac8aa03",
   "pins" : [
+    {
+      "identity" : "codepointmacro",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stefanspringer1/CodepointMacro",
+      "state" : {
+        "revision" : "c8daa3409e2d0a53d201ea0e62b3a9f8e338a473",
+        "version" : "1.0.1"
+      }
+    },
     {
       "identity" : "fastreplace",
       "kind" : "remoteSourceControl",
