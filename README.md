@@ -2,7 +2,7 @@
 
 These are some benchmarks for [FastReplace](https://github.com/stefanspringer1/FastReplace), also using using the [CodepointMacro](https://github.com/stefanspringer1/CodepointMacro), with comparisons to the usual replacement operations.
 
-For replacements with singletons, the number of runs is 10 times as high. You can give the number of runs for non-singletons as the forst argument to the application, else its number is 1000.
+For replacements with singletons, the number of runs is 10 times as high. You can give the number of runs for non-singletons as the first argument to the application, else its number is 1000.
 
 Note that the different runs are not interlocked, so keep the system stable while running the benchmarks.
 
