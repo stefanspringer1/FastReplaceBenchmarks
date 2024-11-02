@@ -35,6 +35,7 @@ duration global regex with codepoint matching      | 3.95655525 seconds
 
 Swift 6.0.2 on Windows 11 (8-core i7, 2.3 Ghz):
 
+```text
                         | # runs |     characters    |      scalars      |     codepoints
 ------------------------|--------|-------------------|-------------------|-------------------
 single to single        |  10000 | 0.2724426 seconds | 0.4719126 seconds | 0.176226 seconds
@@ -53,3 +54,4 @@ regex in function                                  | 3.1188832 seconds
 duration global regex                              | 2.8759167 seconds
 duration regex in function with codepoint matching | 3.4034568 seconds
 duration global regex with codepoint matching      | 3.5267184 seconds
+```
