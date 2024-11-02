@@ -6,7 +6,9 @@ For replacements with singletons, the number of runs is 10 times as high. You ca
 
 Note that the different runs are not interlocked, so keep the system stable while running the benchmarks.
 
-Sample output:
+Sample outputs:
+
+Swift 6.0.0 on an M1 MacBook Pro:
 
 ```text
                         | # runs |      characters     |       scalars       |      codepoints    
