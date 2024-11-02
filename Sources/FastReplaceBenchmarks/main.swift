@@ -103,6 +103,13 @@ print("\(nForSingle) runs for replacements with singletons, \(n) runs else.")
 
 let text = "hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello"
 
+let regex = /e/
+
+let durationRegexInFunction = measure(text: text, { $0.replacing(/e/, with: "∫") }, n: nForSingle).description
+let durationGlobalRegex = measure(text: text, { $0.replacing(regex, with: "∫") }, n: nForSingle).description
+let durationRegexInFunctionWithCodepointMatching = measure(text: text, { $0.replacing(/e/, with: "∫") }, n: nForSingle).description
+let durationGlobalRegexWithCodepointMatching = measure(text: text, { $0.replacing(regex, with: "∫") }, n: nForSingle).description
+
 let durationSingleCharacter = measure(text: text, { $0.replacing("e", with: "∫") }, n: nForSingle).description
 let durationSingleScalar = measure(text: text, { $0.replacing(UnicodeScalar("e"), with: UnicodeScalar("∫")) }, n: nForSingle).description
 let durationSingleCodepoint = measure(text: text, { $0.replacing(#codepoint("e"), with: #codepoint("∫")) }, n: nForSingle).description
@@ -153,6 +160,14 @@ print(
     ------------------------|-\(hyphensForRuns)-|-\(hyphensForDuration)-|-\(hyphensForDuration)-|-\(hyphensForDuration)-
     several, each to String | \(n.withSpacesBefore(runsInfoLength)) | \(duractionSeveralCharactersToString.withSpacesAfter(maxDurationInfoLength)) | \(duractionSeveralScalarsToString.withSpacesAfter(maxDurationInfoLength)) | \(duractionSeveralCodepointsToString.withSpacesAfter(maxDurationInfoLength))
     ------------------------|-\(hyphensForRuns)-|-\(hyphensForDuration)-|-\(hyphensForDuration)-|-\(hyphensForDuration)-
+    
+    
+                                                       | replacement of a single letter via regular expression (\(n) runs)
+    ---------------------------------------------------|-------------------------------------------------------------------
+    regex in function                                  | \(durationRegexInFunction)
+    duration global regex                              | \(durationGlobalRegex)
+    duration regex in function with codepoint matching | \(durationRegexInFunctionWithCodepointMatching),
+    duration global regex with codepoint matching      | \(durationGlobalRegexWithCodepointMatching)
     
     """
 )
