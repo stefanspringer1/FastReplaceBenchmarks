@@ -1,5 +1,5 @@
 {
-  "originHash" : "ccd109e6d6e2156e8842abbbe8e2104088b10f94e0acc7fc1a142cbb864e6cd0",
+  "originHash" : "7629777578b590b38851319f92b0ee8ba559830b604b338351a10f843661013b",
   "pins" : [
     {
       "identity" : "codepointmacro",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/stefanspringer1/FastReplace",
       "state" : {
-        "revision" : "4a32c96bdc5e5496b2f74b9abfca0113f69fe489",
-        "version" : "1.0.3"
+        "revision" : "6dd2806c16e72a6fc4e174d9e1d2fb522f94338c",
+        "version" : "1.0.4"
       }
     },
     {
