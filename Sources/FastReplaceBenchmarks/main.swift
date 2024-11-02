@@ -166,7 +166,7 @@ print(
     ---------------------------------------------------|-------------------------------------------------------------------
     regex in function                                  | \(durationRegexInFunction)
     duration global regex                              | \(durationGlobalRegex)
-    duration regex in function with codepoint matching | \(durationRegexInFunctionWithCodepointMatching),
+    duration regex in function with codepoint matching | \(durationRegexInFunctionWithCodepointMatching)
     duration global regex with codepoint matching      | \(durationGlobalRegexWithCodepointMatching)
     
     """
