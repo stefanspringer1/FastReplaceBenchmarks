@@ -14,7 +14,7 @@ let package = Package(
             targets: ["FastReplaceBenchmarks"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/stefanspringer1/FastReplace", from: "1.0.0"),
+        .package(url: "https://github.com/stefanspringer1/FastReplace", from: "1.0.3"),
         .package(url: "https://github.com/stefanspringer1/CodepointMacro", from: "1.0.3"),
     ],
     targets: [
