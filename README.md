@@ -55,3 +55,26 @@ duration global regex                              | 2.8759167 seconds
 duration regex in function with codepoint matching | 3.4034568 seconds
 duration global regex with codepoint matching      | 3.5267184 seconds
 ```
+
+Swift 6.1.2 on macOS (M2):
+
+```text
+                        | # runs |      characters     |       scalars       |      codepoints    
+------------------------|--------|---------------------|---------------------|---------------------
+single to single        |  10000 | 0.094836833 seconds | 0.263591166 seconds | 0.031773875 seconds
+------------------------|--------|---------------------|---------------------|---------------------
+single to String        |  10000 | 0.095318875 seconds | 0.307546875 seconds | 0.309045 seconds   
+------------------------|--------|---------------------|---------------------|---------------------
+several, each to single |   1000 | 0.0745745 seconds   | 0.029312334 seconds | 0.005251042 seconds
+------------------------|--------|---------------------|---------------------|---------------------
+several, each to String |   1000 | 0.082356709 seconds | 0.039429208 seconds | 0.037851209 seconds
+------------------------|--------|---------------------|---------------------|---------------------
+
+
+                                                   | replacement of a single letter via regular expression (1000 runs)
+---------------------------------------------------|-------------------------------------------------------------------
+regex in function                                  | 1.043764167 seconds
+duration global regex                              | 0.958203875 seconds
+duration regex in function with codepoint matching | 1.011881791 seconds
+duration global regex with codepoint matching      | 0.961194084 seconds
+```
